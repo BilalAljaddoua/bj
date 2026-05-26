@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"  
+      content="SPC-TSOS منصة التحول الرقمي لإدارة حركة النفط عبر الصهاريج من الحقل إلى الخزان مع رقابة أمنية وتتبع ميداني وكشف فروقات المادة."
+    />
+    <title>SPC-TSOS | نظام ترحيلات النفط</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto:wght@400;500;700;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="assets/oil-convoy-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-glass>
+      <a class="brand" href="#top" aria-label="SPC-TSOS">
+        <span class="brand-mark">TS</span>
+        <span>
+          <strong>SPC-TSOS</strong>
+          <small>نظام ترحيلات النفط</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#overview">الرؤية</a>
+        <a href="#operations">غرفة العمليات</a>
+        <a href="#security">الرقابة</a>
+        <a href="#documents">الوثائق</a>
+        <a href="#governance">الحوكمة</a>
+      </nav>
+      <a class="portfolio-button" href="../../index.html" target="_blank" rel="noreferrer">موقع المبرمج</a>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="تبديل النمط">
+        <span class="sun">☀</span>
+        <span class="moon">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/oil-convoy-hero.png" alt="" />
+          <div class="hero-map">
+            <span class="route-dot dot-a"></span>
+            <span class="route-dot dot-b"></span>
+            <span class="route-dot dot-c"></span>
+            <span class="route-line"></span>
+            <span class="convoy-beacon"></span>
+          </div>
+        </div>
+
+        <div class="surface-station" aria-hidden="true">
+          <span class="pump pump-a"></span>
+          <span class="pump pump-b"></span>
+          <span class="pipe-flow"></span>
+          <span class="pipe-flow pipe-flow-b"></span>
+          <span class="mini-tank"></span>
+        </div>
+
+        <div class="section-shell hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">تحول رقمي لحركة النفط عبر الصهاريج</span>
+            <h1>من الحقل إلى الخزان، كل صهريج له أثر رقمي لا يختفي.</h1>
+            <p class="hero-lead">
+              SPC-TSOS يحول القوافل النفطية إلى منظومة تشغيل ورقابة: يتأكد من مصدر
+              المادة، يتتبع مسار القافلة، يحدد الصهاريج المتعطلة، ويكشف أي تغير في
+              الخصائص أو الكمية قبل أن يتحول إلى مشكلة إدارية أو أمنية.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#operations">دخول غرفة العمليات</a>
+              <a class="button ghost" href="#documents">تصفح ومعاينة الملفات</a>
+              <a class="button ghost" href="../../index.html" target="_blank" rel="noreferrer">موقع المبرمج</a>
+            </div>
+          </div>
+
+          <aside class="control-panel" aria-label="ملخص تشغيل المشروع">
+            <div class="panel-topline">
+              <span>لوحة متابعة حية</span>
+              <strong>رقابة تشغيلية وأمنية</strong>
+            </div>
+            <div class="radar">
+              <span></span>
+              <i></i>
+              <b class="disabled-truck">!</b>
+            </div>
+            <dl class="hero-metrics">
+              <div>
+                <dt>قوافل تحت المتابعة</dt>
+                <dd data-count="10">0</dd>
+              </div>
+              <div>
+                <dt>صهاريج على المسار</dt>
+                <dd data-count="3">0</dd>
+              </div>
+              <div>
+                <dt>نقاط تحقق أمنية</dt>
+                <dd data-count="6">0</dd>
+              </div>
+            </dl>
+            <p>
+              الطبقات الست: هوية رقمية، مهمة قافلة، رقابة أمنية على مصدر المادة،
+              تتبع مسار، تحليل خصائص، ومطابقة كمية عند الاستلام.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-shell intro-strip" id="overview">
+        <div>
+          <span class="section-kicker">الرؤية</span>
+          <h2>مشروع لا يرقمن الورق فقط، بل يجعل حركة النفط قابلة للإثبات.</h2>
+        </div>
+        <p>
+          النظام يربط الحقول والوجهات والشركات الناقلة والسائقين والصهاريج والتحليل
+          المخبري والقبان في سجل واحد. أي مادة لا تمر عبر مسارها النظامي تصبح مرئية
+          كاستثناء: مصدر غير مطابق، كمية غير متوازنة، خصائص متغيرة، أو صهريج خرج عن
+          المسار.
+        </p>
+      </section>
+
+      <section class="section-shell trust-chain" aria-label="سلسلة الثقة التشغيلية">
+        <div class="section-heading compact">
+          <span class="section-kicker">سلسلة الثقة</span>
+          <h2>خمسة أسئلة يجب أن يجيب عنها النظام قبل اعتماد الاستلام.</h2>
+        </div>
+        <div class="chain-track">
+          <article>
+            <span>01</span>
+            <h3>من أين جاءت المادة؟</h3>
+            <p>ربط الحقل ورمز القافلة والصهريج يمنع ظهور مادة بلا مصدر نظامي.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>هل تحركت في مسارها؟</h3>
+            <p>نقاط المرور تكشف التأخير أو الخروج عن المسار أو توقف الصهريج.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>هل تغيرت خصائصها؟</h3>
+            <p>الكثافة والحرارة والماء والرواسب تقارن بين التحميل والاستلام.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>هل وصلت كميتها؟</h3>
+            <p>القبان يحول الفرق إلى مقدار ونسبة وحالة مراجعة مفهومة.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>من اعتمد القرار؟</h3>
+            <p>كل تعديل واعتماد يبقى داخل سجل تدقيق يمكن الرجوع إليه.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band operations" id="operations">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="section-kicker">غرفة العمليات</span>
+            <h2>مسار القافلة كما يراه النظام.</h2>
+            <p>
+              كل خطوة في الحركة لها قرار، وبيانات، وبصمة رقمية. هذا المسار يوضح كيف
+              ينتقل النفط من مهمة القافلة إلى التقرير النهائي مع رقابة أمنية وتتبع
+              للانحرافات والأعطال.
+            </p>
+          </div>
+
+          <div class="ops-layout">
+            <div class="pipeline" aria-label="مراحل رحلة النفط">
+              <button class="stage is-active" data-stage="identity" type="button">
+                <span>01</span>
+                <strong>هوية رقمية</strong>
+                <small>صهريج وسائق ومسارات مسموحة</small>
+              </button>
+              <button class="stage" data-stage="security" type="button">
+                <span>02</span>
+                <strong>رقابة أمنية</strong>
+                <small>تأكيد مصدر المادة وأنها ليست خارج السجل</small>
+              </button>
+              <button class="stage" data-stage="mission" type="button">
+                <span>03</span>
+                <strong>مهمة قافلة</strong>
+                <small>تجميع الصهاريج وتحديد الوجهة</small>
+              </button>
+              <button class="stage" data-stage="tracking" type="button">
+                <span>04</span>
+                <strong>تتبع المسار</strong>
+                <small>مواقع القافلة والصهاريج المتعطلة</small>
+              </button>
+              <button class="stage" data-stage="lab" type="button">
+                <span>05</span>
+                <strong>تحليل وقياس</strong>
+                <small>كشف تغير الخصائص أو نوعية المادة</small>
+              </button>
+              <button class="stage" data-stage="scale" type="button">
+                <span>06</span>
+                <strong>قبان وفروقات</strong>
+                <small>مقارنة الكمية المتوقعة والمستلمة</small>
+              </button>
+            </div>
+
+            <div class="stage-view" id="stageView">
+              <span class="status-pill">نشط</span>
+              <h3>هوية رقمية تمنع الخلل قبل أن يتحول إلى قافلة.</h3>
+              <p>
+                يمنح النظام كل صهريج وسائق بطاقة تعريف مرتبطة بقاعدة مركزية، مع QR
+                للتحقق، وتصنيف فني، وإمكانية حظر فورية عند الحاجة.
+              </p>
+              <ul>
+                <li>ربط بيانات الصهريج والسائق في سجل واحد.</li>
+                <li>منع الصهاريج غير المؤهلة من المسارات الطويلة.</li>
+                <li>تسجيل قرارات الحظر ضمن أثر رقابي غير قابل للحذف.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell assurance-grid" id="security">
+        <article class="assurance-card security-card">
+          <span>SEC</span>
+          <h3>رقابة أمنية على مصدر المادة</h3>
+          <p>
+            النظام يربط الصهريج بالحقل، المهمة، التوقيت، والوجهة. إذا ظهرت مادة لا
+            تطابق سجل التحميل أو خرجت عن خطها النظامي، تصبح حالة اشتباه قابلة
+            للمراجعة لا مجرد رقم في تقرير.
+          </p>
+        </article>
+        <article class="assurance-card">
+          <span>GPS</span>
+          <h3>تتبع مسار القافلة</h3>
+          <p>
+            يعرض مسار الحركة كنقاط تحقق بين الحقل والوجهة، ويساعد على معرفة مكان
+            الصهريج المتعطل أو المتأخر، مع فصل القافلة الطبيعية عن الحالات الشاذة.
+          </p>
+        </article>
+        <article class="assurance-card">
+          <span>LAB</span>
+          <h3>كشف تغير الخصائص</h3>
+          <p>
+            مقارنة الحرارة والكثافة والأملاح ونسبة الماء والرواسب بين التحميل
+            والاستلام ترفع إنذارا عند ظهور تغير غير منطقي في خصائص المادة.
+          </p>
+        </article>
+        <article class="assurance-card">
+          <span>QTY</span>
+          <h3>كشف تغير الكمية</h3>
+          <p>
+            بدل رقم فرق ضخم وغير منطقي، يعتمد العرض على فروقات تشغيلية قابلة للتفسير:
+            نسبة فرق، مقدار بالكيلوغرام، وحالة مطابقة واضحة.
+          </p>
+        </article>
+      </section>
+
+      <section class="section-band command-center">
+        <div class="section-shell command-grid">
+          <div>
+            <span class="section-kicker">مركز المطابقة</span>
+            <h2>قرار أوضح عند وصول المادة إلى الخزان.</h2>
+            <p>
+              في نهاية الرحلة لا يكفي أن تصل القافلة. المهم أن تصل المادة الصحيحة،
+              بالكمية المتوقعة، وبخصائص لا تشير إلى خلط أو فقد أو تبديل. هنا يجمع
+              النظام بيانات التحميل والتحليل والقبان ليعطي الإدارة حالة مطابقة
+              واضحة قبل اعتماد الاستلام.
+            </p>
+          </div>
+          <div class="tank-visual" aria-label="تصور خزان وبيانات">
+            <div class="tank">
+              <span class="fill"></span>
+            </div>
+            <div class="signal-card">
+              <strong>فرق المطابقة التشغيلي</strong>
+              <span>-2,140 كغ</span>
+              <small>ضمن هامش مراجعة منطقي بنسبة 0.52% من الكمية المتوقعة</small>
+            </div>
+            <div class="signal-card accent">
+              <strong>إجمالي الكمية المستلمة</strong>
+              <span>407,860 كغ</span>
+              <small>مقابل كمية متوقعة 410,000 كغ عبر 10 رحلات موثقة</small>
+            </div>
+            <div class="signal-card ok">
+              <strong>حالة المادة</strong>
+              <span>مطابقة مشروطة</span>
+              <small>الخصائص والكمية بحاجة مراجعة تشغيلية لا إنذار سرقة</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell feature-grid" id="projects">
+        <div class="section-heading compact">
+          <span class="section-kicker">المشاريع داخل المنظومة</span>
+          <h2>كل ملف هنا يمثل جزءا من النظام التشغيلي الكامل.</h2>
+        </div>
+
+        <article class="feature-card wide">
+          <span class="card-icon">◆</span>
+          <h3>مشروع التحول الرقمي لإدارة حركة النفط</h3>
+          <p>
+            الوثيقة المؤسسة للمشروع: المشكلة، واقع العمل الورقي، مخاطر الخطوط الطويلة،
+            والحل المقترح عبر قاعدة بيانات مركزية وحوكمة لحظية.
+          </p>
+          <a href="تقديم المشروع/مشروع التحول الرقمي لإدارة حركة النفط.pdf" target="_blank" rel="noreferrer">
+            قراءة الوثيقة
+          </a>
+        </article>
+
+        <article class="feature-card">
+          <span class="card-icon">▣</span>
+          <h3>نموذج الهويات</h3>
+          <p>بطاقات تنظيمية للصهاريج والسائقين، صالحة للتحقق السريع وربط الدخول بالحقل.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="card-icon">▰</span>
+          <h3>مهمة انطلاق قافلة</h3>
+          <p>نموذج يوثق رمز القافلة، الوجهة، الصهاريج، الشركات الناقلة، والتعديلات.</p>
+        </article>
+
+        <article class="feature-card action-card">
+          <span class="card-icon">◈</span>
+          <h3>التقرير الإداري</h3>
+          <p>ملخص تنفيذي يربط المنبع بالخزان ويظهر عدد الرحلات، الأوزان، والفروقات.</p>
+          <button class="text-action" data-preview="report" type="button">معاينة التقرير</button>
+        </article>
+
+        <article class="feature-card action-card">
+          <span class="card-icon">◎</span>
+          <h3>قافلة حقل التيم</h3>
+          <p>مثال عملي لقافلة حقيقية مع رمز تشغيل وتوقيت انطلاق وصهاريج ووجهات.</p>
+          <button class="text-action" data-preview="tim" type="button">معاينة القافلة</button>
+        </article>
+      </section>
+
+      <section class="section-shell documents" id="documents">
+        <div class="section-heading">
+          <span class="section-kicker">مكتبة المشروع</span>
+          <h2>تصفح ومعاينة وثائق SPC-TSOS.</h2>
+          <p>
+            يمكنك فتح الملفات الأصلية، أو معاينة أهم محتواها داخل الموقع كأنها شاشة
+            تشغيل مختصرة قبل الدخول إلى الملف الكامل.
+          </p>
+        </div>
+
+        <div class="doc-toolbar" role="tablist" aria-label="تصفية الوثائق">
+          <button class="filter is-active" data-filter="all" type="button">الكل</button>
+          <button class="filter" data-filter="strategy" type="button">استراتيجية</button>
+          <button class="filter" data-filter="operation" type="button">تشغيلية</button>
+          <button class="filter" data-filter="report" type="button">تقارير</button>
+        </div>
+
+        <div class="doc-grid">
+          <article class="doc-card" data-type="strategy">
+            <div class="doc-preview strategy-preview"><span>PDF</span></div>
+            <h3>مشروع التحول الرقمي لإدارة حركة النفط</h3>
+            <p>الوثيقة الشاملة لفلسفة النظام ومشكلاته وحلوله.</p>
+            <a href="تقديم المشروع/مشروع التحول الرقمي لإدارة حركة النفط.pdf" target="_blank" rel="noreferrer">
+              فتح الملف
+            </a>
+          </article>
+
+          <article class="doc-card" data-type="operation">
+            <div class="doc-preview identity-preview"><span>ID</span></div>
+            <h3>نموذج الهويات</h3>
+            <p>بطاقات الصهاريج والسائقين والتحقق التنظيمي.</p>
+            <a href="تقديم المشروع/نموذج الهويات.pdf" target="_blank" rel="noreferrer">فتح الملف</a>
+          </article>
+
+          <article class="doc-card" data-type="operation">
+            <div class="doc-preview convoy-preview"><span>CNV</span></div>
+            <h3>نموذج مهمة انطلاق قافلة</h3>
+            <p>مهمة قافلة محملة مع الصهاريج والتعديلات والأثر الرقابي.</p>
+            <a href="تقديم المشروع/نموذج مهمة انطلاق قافلة.pdf" target="_blank" rel="noreferrer">فتح الملف</a>
+          </article>
+
+          <article class="doc-card" data-type="operation">
+            <div class="doc-preview tim-preview"><span>TIM</span></div>
+            <h3>قافلة حقل التيم إلى حمص</h3>
+            <p>مثال عملي لقافلة بتاريخ 27-04-2026.</p>
+            <button class="text-action" data-preview="tim" type="button">معاينة</button>
+            <a href="تقديم المشروع/قافلة_حقل التيم_حمص_2026-04-27.pdf" target="_blank" rel="noreferrer">
+              فتح الملف
+            </a>
+          </article>
+
+          <article class="doc-card" data-type="report">
+            <div class="doc-preview report-preview"><span>XLSX</span></div>
+            <h3>التقرير الإداري لحركة النفط</h3>
+            <p>تقرير إداري من 2025-10-21 إلى 2026-05-31.</p>
+            <button class="text-action" data-preview="report" type="button">معاينة</button>
+            <a
+              href="تقديم المشروع/التقرير الإداري لحركة النفط من المنبع إلى الخزان (2025-10-21 ⇢ 2026-05-31)_2026-02-09_01-39.xlsx"
+              target="_blank"
+              rel="noreferrer"
+            >
+              فتح الملف
+            </a>
+          </article>
+        </div>
+
+        <div class="inline-preview" id="inlinePreview" aria-live="polite">
+          <div class="preview-empty">
+            اختر "معاينة" من بطاقة التقرير الإداري أو قافلة حقل التيم لعرض ملخص حي هنا.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band governance" id="governance">
+        <div class="section-shell">
+          <div class="section-heading compact">
+            <span class="section-kicker">الحوكمة</span>
+            <h2>ما الذي يضيفه النظام للإدارة والجهات الرقابية؟</h2>
+          </div>
+          <div class="governance-grid">
+            <div>
+              <strong>01</strong>
+              <h3>منع المخاطر قبل الانطلاق</h3>
+              <p>تصنيف الصهاريج حسب الحالة الفنية والعمر والمسارات المسموحة.</p>
+            </div>
+            <div>
+              <strong>02</strong>
+              <h3>إثبات مصدر المادة</h3>
+              <p>ربط المادة بالحقل والمهمة والصهريج والوجهة لمعرفة أنها ليست خارج السجل.</p>
+            </div>
+            <div>
+              <strong>03</strong>
+              <h3>كشف التعطل والانحراف</h3>
+              <p>تحديد مكان الصهريج المتعطل أو المتأخر ومراجعة أي خروج عن مسار القافلة.</p>
+            </div>
+            <div>
+              <strong>04</strong>
+              <h3>كشف تغير الخصائص والكمية</h3>
+              <p>مطابقة التحليل والقبان لاكتشاف تغير المادة أو نقص الكمية عند الاستلام.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <strong>SPC-TSOS</strong>
+          <p>منظومة رقمية لإدارة حركة النفط بالصهاريج من المنبع إلى الخزان.</p>
+        </div>
+        <a href="#top">العودة للأعلى</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
