@@ -41,10 +41,10 @@ const content = {
       subtitle: "أحوّل العمليات الميدانية المعقدة إلى أنظمة رقمية موثوقة، قابلة للتوسع، وجاهزة لدعم القرار.",
       note:
         "أنا لا أبني واجهات ويب فقط؛ بل أصمم أنظمة تشغيلية حقيقية تجمع بين سير العمل، قواعد البيانات، التكاملات، سجلات التدقيق، ولوحات المتابعة في منظومة يمكن الاعتماد عليها داخل بيئات العمل الفعلية.",
-      visualEyebrow: "طبقة التحكم التشغيلي",
-      visualTitle: "من إشارة الميدان إلى القرار",
-      flowItems: ["العمليات الميدانية", "نماذج البيانات", "تكامل الأنظمة", "لوحات القرار"],
-      qualities: ["قابل للتتبع", "متكامل", "قابل للتدقيق"]
+      visualEyebrow: "نمط تفكير هجين",
+      visualTitle: "هندسة تفهم المشكلة، وبرمجة تصنع الحل",
+      flowItems: ["عقلية هندسية تحليلية", "مهارات برمجية قوية", "دمج الهندسة بالبرمجة", "تحليل المشاكل وبناء الحلول"],
+      qualities: ["تفكير هندسي", "تنفيذ برمجي", "حلول عملية"]
     },
     stats: [
       { value: "+3", label: "سنوات تعليم ذاتي منظم عبر ProgrammingAdvices.com", icon: "code" },
@@ -293,10 +293,10 @@ const content = {
       subtitle: "Transforming complex field operations into reliable, scalable, and decision-ready digital systems.",
       note:
         "I am not just building web interfaces. I design operational software where workflows, databases, integrations, audits, and dashboards become one dependable system for real-world environments.",
-      visualEyebrow: "Operations Control Layer",
-      visualTitle: "From field signal to decision",
-      flowItems: ["Field Operations", "Data Models", "System Integration", "Decision Dashboards"],
-      qualities: ["Traceable", "Integrated", "Auditable"]
+      visualEyebrow: "Hybrid Thinking Pattern",
+      visualTitle: "Engineering that understands the problem, software that builds the solution",
+      flowItems: ["Analytical engineering mindset", "Strong software skills", "Engineering-software synthesis", "Problem analysis and solution design"],
+      qualities: ["Engineering thinking", "Software execution", "Practical solutions"]
     },
     stats: [
       { value: "3+", label: "Years of structured self-learning with ProgrammingAdvices.com", icon: "code" },
