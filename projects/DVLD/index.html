@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173a3a" />
+    <meta
+      name="description"
+      content="موقع تعريفي لنظام إصدار وإدارة رخص السائقين DVLD: إصدار الرخص، التجديد، بدل الفاقد والتالف، الرخص الدولية، الاختبارات، الحجز، وفك الحجز ضمن منظومة تشغيلية موثقة."
+    />
+    <meta name="author" content="بلال جهاد الجدوع" />
+    <title>DVLD | نظام إصدار وإدارة رخص السائقين</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/dvld-hero-ops.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="assets/lucide.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="identity-strip" aria-hidden="true"></div>
+      <nav class="section-shell nav-bar" aria-label="التنقل الرئيسي">
+        <a class="brand" href="#home" aria-label="DVLD">
+          <span class="brand-mark">DL</span>
+          <span class="brand-copy">
+            <strong>DVLD</strong>
+            <small>إصدار وإدارة رخص السائقين</small>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#workflow">دورة الطلب</a>
+          <a href="#services">الخدمات</a>
+          <a href="#license-classes">فئات الرخص</a>
+          <a href="#architecture">البنية</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="icon-link" href="نظام اصدار وادارة رخص السائقين_2.pdf" target="_blank" rel="noreferrer">
+            <i data-lucide="file-text"></i>
+            <span>الوثيقة</span>
+          </a>
+          <a class="icon-link" href="https://github.com/BilalAljaddoua/New-Driving-license-and-Drivers-management-system" target="_blank" rel="noreferrer">
+            <i data-lucide="github"></i>
+            <span>GitHub</span>
+          </a>
+          <a class="icon-link portfolio-link" href="../../index.html" target="_blank" rel="noreferrer">
+            <i data-lucide="user-round"></i>
+            <span>موقع المبرمج</span>
+          </a>
+          <button class="icon-button" type="button" data-theme-toggle aria-label="تبديل المظهر">
+            <i data-lucide="moon"></i>
+          </button>
+          <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-label="فتح القائمة" aria-expanded="false">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" data-mobile-menu>
+        <a href="#home">الرئيسية</a>
+        <a href="#workflow">دورة الطلب</a>
+        <a href="#services">الخدمات</a>
+        <a href="#license-classes">فئات الرخص</a>
+        <a href="#architecture">البنية</a>
+        <a href="نظام اصدار وادارة رخص السائقين_2.pdf" target="_blank" rel="noreferrer">الوثيقة</a>
+        <a href="https://github.com/BilalAljaddoua/New-Driving-license-and-Drivers-management-system" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/dvld-hero-ops.png" alt="" />
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="section-shell hero-layout">
+          <div class="hero-copy reveal">
+            <p class="section-eyebrow">من طلب ورقي إلى رخصة قابلة للتتبع</p>
+            <h1>نظام إصدار وإدارة رخص السائقين</h1>
+            <p class="hero-lead">
+              DVLD يحوّل دائرة الترخيص إلى منظومة تشغيلية واحدة: شخص واحد، طلب واضح، شروط أهلية، اختبارات مرتبة، رخصة موثقة، وسجل تدقيق يعرف من فعل ماذا ومتى.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#workflow">
+                <span>استكشاف دورة الطلب</span>
+                <i data-lucide="arrow-down-left"></i>
+              </a>
+              <a class="secondary-action" href="نظام اصدار وادارة رخص السائقين_2.pdf" target="_blank" rel="noreferrer">
+                <i data-lucide="file-search"></i>
+                <span>قراءة المتطلبات</span>
+              </a>
+              <a class="secondary-action" href="https://github.com/BilalAljaddoua/New-Driving-license-and-Drivers-management-system" target="_blank" rel="noreferrer">
+                <i data-lucide="git-branch"></i>
+                <span>مصدر المشروع</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="license-console reveal" aria-label="ملخص تشغيل DVLD">
+            <div class="console-head">
+              <span>طلب نشط</span>
+              <strong>إصدار رخصة جديدة</strong>
+            </div>
+            <div class="license-card-visual">
+              <div class="license-chip"></div>
+              <div class="license-photo"></div>
+              <div class="license-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <b>Class 03</b>
+            </div>
+            <div class="progress-rail" aria-label="تقدم الطلب">
+              <span class="done">شخص</span>
+              <span class="done">طلب</span>
+              <span class="active">اختبار</span>
+              <span>رخصة</span>
+            </div>
+            <dl class="hero-metrics">
+              <div><dt>خدمات رئيسية</dt><dd data-count="7">0</dd></div>
+              <div><dt>فئات رخص</dt><dd data-count="7">0</dd></div>
+              <div><dt>اختبارات مرتبة</dt><dd data-count="3">0</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="registry-strip">
+        <div class="section-shell strip-inner reveal">
+          <div>
+            <p class="section-eyebrow">وعد النظام</p>
+            <h2>كل خدمة ترخيص لها مسار، وكل قرار له أثر.</h2>
+          </div>
+          <p>
+            يعرض DVLD جوهر النظام كما يحتاجه موظف الترخيص: خدمة واضحة، قواعد تحقق قبل القرار، بيانات مركزية، صلاحيات مضبوطة، وسجل حركة يحفظ كل خطوة.
+          </p>
+          <div class="strip-signals">
+            <span><i data-lucide="fingerprint"></i> هوية غير مكررة</span>
+            <span><i data-lucide="clipboard-check"></i> شروط قبل الإصدار</span>
+            <span><i data-lucide="history"></i> تتبع وتراجع</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="page-section workflow-section">
+        <div class="section-shell">
+          <div class="section-header reveal">
+            <p class="section-eyebrow">دورة الطلب</p>
+            <h2>رحلة واحدة، لكنها لا تسمح بتجاوز خطوة ناقصة.</h2>
+            <p>
+              من الرقم الوطني وحتى إصدار الرخصة، يحافظ النظام على تسلسل القرار: لا طلب مكرر، لا رخصة من نفس الفئة، ولا انتقال للاختبار التالي قبل نجاح السابق.
+            </p>
+          </div>
+
+          <div class="workflow-layout">
+            <div class="workflow-steps reveal" role="tablist" aria-label="مراحل طلب الرخصة">
+              <button class="workflow-step active" type="button" data-stage="person" aria-selected="true">
+                <span>01</span>
+                <strong>ملف الشخص</strong>
+                <small>رقم وطني وبيانات أساسية وصورة</small>
+              </button>
+              <button class="workflow-step" type="button" data-stage="application" aria-selected="false">
+                <span>02</span>
+                <strong>تقديم الطلب</strong>
+                <small>نوع خدمة وحالة ورسوم</small>
+              </button>
+              <button class="workflow-step" type="button" data-stage="eligibility" aria-selected="false">
+                <span>03</span>
+                <strong>التحقق</strong>
+                <small>العمر، الفئة، وعدم التكرار</small>
+              </button>
+              <button class="workflow-step" type="button" data-stage="tests" aria-selected="false">
+                <span>04</span>
+                <strong>الاختبارات</strong>
+                <small>نظر، نظري، عملي بالترتيب</small>
+              </button>
+              <button class="workflow-step" type="button" data-stage="issue" aria-selected="false">
+                <span>05</span>
+                <strong>الإصدار</strong>
+                <small>رخصة وصلاحية وسائق رسمي</small>
+              </button>
+            </div>
+
+            <article class="stage-panel reveal" data-stage-panel>
+              <span class="status-pill">مرحلة نشطة</span>
+              <h3>ملف شخص واحد يمنع فوضى التكرار قبل أن تبدأ.</h3>
+              <p>
+                يبدأ النظام من الرقم الوطني. إن لم يكن الشخص موجودًا، تتم إضافته أولًا مع بياناته الأساسية وصورته، ثم ترتبط كل الطلبات والرخص المستقبلية بهذا السجل.
+              </p>
+              <ul>
+                <li>بحث بالرقم الوطني قبل إنشاء أي طلب جديد.</li>
+                <li>حفظ الاسم الرباعي والميلاد والجنسية والتواصل والصورة.</li>
+                <li>منع تكرار الشخص نفسه داخل قاعدة البيانات.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="page-section services-section">
+        <div class="section-shell">
+          <div class="section-header reveal">
+            <p class="section-eyebrow">الخدمات</p>
+            <h2>سبع خدمات ليست أزرارًا منفصلة، بل حالات داخل منظومة واحدة.</h2>
+            <p>
+              كل خدمة تملك شروط قبول ورسومًا وحالة طلب، وتُبقي أثر الحركة محفوظًا للمراجعة التشغيلية والإدارية.
+            </p>
+          </div>
+
+          <div class="service-toolbar reveal" role="tablist" aria-label="تصنيف الخدمات">
+            <button class="filter active" type="button" data-filter="all">الكل</button>
+            <button class="filter" type="button" data-filter="issue">إصدار</button>
+            <button class="filter" type="button" data-filter="renewal">تجديد وبدائل</button>
+            <button class="filter" type="button" data-filter="control">رقابة</button>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal" data-type="issue">
+              <i data-lucide="badge-plus"></i>
+              <h3>إصدار رخصة لأول مرة</h3>
+              <p>طلب جديد لفئة رخصة محددة، مع تحقق من العمر وعدم امتلاك رخصة سابقة من نفس الفئة.</p>
+              <span>رسوم الطلب 5 آلاف + رسوم الفئة</span>
+            </article>
+            <article class="service-card reveal" data-type="issue">
+              <i data-lucide="rotate-ccw"></i>
+              <h3>إعادة فحص</h3>
+              <p>تحديد موعد جديد مرتبط بالفحص السابق والطلب الأصلي عند وجود نتيجة رسوب.</p>
+              <span>رسوم خدمة 5 آلاف + رسوم الفحص</span>
+            </article>
+            <article class="service-card reveal" data-type="renewal">
+              <i data-lucide="refresh-cw"></i>
+              <h3>تجديد رخصة القيادة</h3>
+              <p>تجديد رخصة منتهية بعد تسليم الرخصة القديمة واجتياز فحص النظر.</p>
+              <span>رسوم خدمة 10 آلاف</span>
+            </article>
+            <article class="service-card reveal" data-type="renewal">
+              <i data-lucide="copy-plus"></i>
+              <h3>بدل فاقد</h3>
+              <p>إصدار رخصة بديلة بعد التحقق من أن الرخصة ليست محجوزة.</p>
+              <span>رسوم خدمة 20 ألف</span>
+            </article>
+            <article class="service-card reveal" data-type="renewal">
+              <i data-lucide="wrench"></i>
+              <h3>بدل تالف</h3>
+              <p>إصدار نسخة بديلة بعد تسليم الرخصة التالفة وتسجيل تاريخ الإصدار.</p>
+              <span>رسوم خدمة 20 ألف</span>
+            </article>
+            <article class="service-card reveal" data-type="control">
+              <i data-lucide="shield-off"></i>
+              <h3>فك حجز رخصة</h3>
+              <p>تسليم الرخصة بعد دفع الغرامة وتسجيل تاريخ فك الحجز في النظام.</p>
+              <span>غرامة حسب قرار الحجز</span>
+            </article>
+            <article class="service-card reveal" data-type="issue">
+              <i data-lucide="globe-2"></i>
+              <h3>رخصة دولية</h3>
+              <p>متاحة لحامل الفئة الثالثة غير المنتهية وغير المحجوزة، مع حفظ كل الإصدارات السابقة.</p>
+              <span>رسوم خدمة 20 ألف</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section tests-section">
+        <div class="section-shell tests-layout">
+          <div class="section-header reveal">
+            <p class="section-eyebrow">بوابة الاختبارات</p>
+            <h2>ثلاثة اختبارات، وترتيبها جزء من سلامة القرار.</h2>
+            <p>
+              لا يكتفي النظام بحفظ النتيجة؛ بل يحفظ الموعد والرسوم والنجاح أو الرسوب، ويمنع متابعة المسار عند فشل المرحلة السابقة.
+            </p>
+          </div>
+
+          <div class="test-console reveal">
+            <div class="test-tabs" role="tablist" aria-label="اختبارات الرخصة">
+              <button class="active" type="button" data-test="vision"><i data-lucide="eye"></i><span>النظر</span></button>
+              <button type="button" data-test="theory"><i data-lucide="book-open-check"></i><span>النظري</span></button>
+              <button type="button" data-test="practical"><i data-lucide="steering-wheel"></i><span>العملي</span></button>
+            </div>
+            <div class="test-body" data-test-body></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="license-classes" class="page-section classes-section">
+        <div class="section-shell">
+          <div class="section-header reveal">
+            <p class="section-eyebrow">فئات الرخص</p>
+            <h2>فئة الرخصة تحدد العمر والرسوم ومدة الصلاحية.</h2>
+            <p>
+              صممت الفئات كمرجع قابل للتعديل في النظام: الاسم والوصف ثابتان، بينما يمكن ضبط العمر والمدة والرسوم حسب السياسة المعتمدة.
+            </p>
+          </div>
+
+          <div class="class-layout">
+            <div class="class-list reveal" role="tablist" aria-label="فئات رخص القيادة">
+              <button class="active" type="button" data-class-index="0">الدراجات الصغيرة</button>
+              <button type="button" data-class-index="1">الدراجات الثقيلة</button>
+              <button type="button" data-class-index="2">القيادة العادية</button>
+              <button type="button" data-class-index="3">التجارية</button>
+              <button type="button" data-class-index="4">الزراعية</button>
+              <button type="button" data-class-index="5">الحافلات</button>
+              <button type="button" data-class-index="6">الشاحنات الثقيلة</button>
+            </div>
+            <article class="class-panel reveal" data-class-panel></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="page-section architecture-section">
+        <div class="section-shell">
+          <div class="section-header reveal">
+            <p class="section-eyebrow">البنية البرمجية</p>
+            <h2>مشروع WinForms لكن بمنطق طبقات واضح خلف الشاشة.</h2>
+            <p>
+              صُمم DVLD بروح الطبقات التشغيلية: واجهة تخدم الموظف، منطق أعمال يحكم الشروط، طبقة بيانات تحفظ السجلات، وقاعدة SQL Server تجعل القرارات قابلة للتتبع والمراجعة.
+            </p>
+          </div>
+
+          <div class="architecture-grid">
+            <article class="architecture-card reveal">
+              <i data-lucide="monitor-cog"></i>
+              <h3>DVLD</h3>
+              <p>واجهة المستخدم وإدارة شاشات الخدمات، الأشخاص، المستخدمين، الطلبات، الاختبارات، والرخص.</p>
+            </article>
+            <article class="architecture-card reveal">
+              <i data-lucide="workflow"></i>
+              <h3>DVLD_Buisness</h3>
+              <p>طبقة منطق الأعمال: شروط القبول، حالات الطلب، ربط الرخص بالسائقين، وإدارة نتائج الخدمات.</p>
+            </article>
+            <article class="architecture-card reveal">
+              <i data-lucide="database-zap"></i>
+              <h3>DVLD_DataAccess</h3>
+              <p>طبقة الوصول للبيانات، حيث تتحول القرارات التشغيلية إلى استعلامات وإجراءات منظمة.</p>
+            </article>
+            <article class="architecture-card reveal">
+              <i data-lucide="server"></i>
+              <h3>SQL Server</h3>
+              <p>قاعدة بيانات تحفظ الأشخاص والطلبات والرخص والاختبارات والمستخدمين وسجل الحركات.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section command-section">
+        <div class="section-shell command-layout">
+          <div class="command-copy reveal">
+            <p class="section-eyebrow">غرفة العمليات</p>
+            <h2>لقطة تشغيلية من داخل دائرة الترخيص.</h2>
+            <p>
+              هذه الواجهة المصغرة تلخص طريقة تفكير النظام: طلبات بحاجة قرار، رخص محجوزة، اختبارات اليوم، وحركة مستخدمين محفوظة للتدقيق.
+            </p>
+          </div>
+
+          <div class="command-panel reveal">
+            <div class="panel-tabs" role="tablist" aria-label="لوحات التشغيل">
+              <button class="active" type="button" data-dashboard="requests"><i data-lucide="files"></i><span>الطلبات</span></button>
+              <button type="button" data-dashboard="detained"><i data-lucide="badge-alert"></i><span>الحجز</span></button>
+              <button type="button" data-dashboard="audit"><i data-lucide="activity"></i><span>التدقيق</span></button>
+            </div>
+            <div class="panel-body" data-dashboard-body></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <div class="section-shell closing-inner reveal">
+          <div>
+            <p class="section-eyebrow">DVLD</p>
+            <h2>الرخصة ليست بطاقة مطبوعة فقط؛ إنها نتيجة سلسلة تحقق كاملة.</h2>
+          </div>
+          <div class="closing-actions">
+            <a class="primary-action" href="نظام اصدار وادارة رخص السائقين_2.pdf" target="_blank" rel="noreferrer">
+              <span>فتح وثيقة المتطلبات</span>
+              <i data-lucide="file-text"></i>
+            </a>
+            <a class="secondary-action" href="../../index.html" target="_blank" rel="noreferrer">
+              <i data-lucide="user-round"></i>
+              <span>موقع بلال</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-inner">
+        <p>DVLD - نظام إصدار وإدارة رخص السائقين</p>
+        <p>تصميم صفحة المشروع: بلال جهاد الجدوع</p>
+      </div>
+    </footer>
+  </body>
+</html>

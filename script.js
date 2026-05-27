@@ -147,7 +147,9 @@ const content = {
           "نظام خدمات عامة لإصدار الرخص، تجديدها، بدل الفاقد أو التالف، الرخص الدولية، حجز الرخص، وتتبع حالة الطلبات.",
         details:
           "يعالج المشروع دورة الطلب من مقدم الخدمة إلى الرخصة النهائية: بيانات الأشخاص، فئات الرخص وشروط العمر، اختبارات النظر والنظري والعملي، إعادة الفحص، صلاحيات المستخدمين، وسجل كامل للتعديلات والحذف والدخول مع إمكانية الرجوع للتغييرات السابقة.",
-        technologies: ["تحليل أنظمة", "تصميم سير عمل", "صلاحيات مستخدمين", "سجلات تدقيق"]
+        technologies: ["تحليل أنظمة", "تصميم سير عمل", "صلاحيات مستخدمين", "سجلات تدقيق"],
+        demo: "projects/DVLD/index.html",
+        github: "https://github.com/BilalAljaddoua/New-Driving-license-and-Drivers-management-system"
       },
       {
         name: "AI Porosity Prediction",
@@ -362,7 +364,9 @@ const content = {
           "Public-service workflow system for issuing, renewing, replacing, reserving, and tracking driver licenses across multiple license classes.",
         details:
           "The system models applicants, service requests, license classes, eligibility rules, eye/theory/practical tests, retest flows, international licenses, user permissions, and full audit tracking with rollback-aware change history.",
-        technologies: ["System Analysis", "Workflow Design", "Access Control", "Audit Trails"]
+        technologies: ["System Analysis", "Workflow Design", "Access Control", "Audit Trails"],
+        demo: "projects/DVLD/index.html",
+        github: "https://github.com/BilalAljaddoua/New-Driving-license-and-Drivers-management-system"
       },
       {
         name: "AI Porosity Prediction",
