@@ -56,7 +56,7 @@ const content = {
       description:
         "يعمل بلال عند تقاطع هندسة البترول، تحليل الأنظمة، وتطوير البرمجيات، مع تركيز واضح على الأنظمة الرقمية التي تدعم العمليات الحقيقية لا الواجهات الشكلية فقط.",
       paragraphs: [
-        "أنا مهندس بترول، ومحلل نظم، ومطور يركز على الخلفية وقواعد البيانات، أمتلك خبرة في تحويل الإجراءات الميدانية والبيانات التشغيلية إلى أنظمة رقمية موثوقة. يتركز عملي على عمليات النفط والطاقة، سير العمل الصناعي، بنى مزودي الإنترنت، إدارة الأصول، نمذجة قواعد البيانات، الأتمتة، التكامل، التتبع، التقارير، ولوحات دعم القرار.",
+        "أنا مهندس بترول، ومحلل نظم، ومطور برمجيات يركز على منطق الأنظمة وقواعد البيانات، أمتلك خبرة في تحويل الإجراءات الميدانية والبيانات التشغيلية إلى أنظمة رقمية موثوقة. يتركز عملي على عمليات النفط والطاقة، سير العمل الصناعي، بنى مزودي الإنترنت، إدارة الأصول، نمذجة قواعد البيانات، الأتمتة، التكامل، التتبع، التقارير، ولوحات دعم القرار.",
         "الهدف بسيط: بناء برمجيات تفهم كيف تتحرك العمليات فعليًا، أين تكون المساءلة مطلوبة، وكيف يجب أن تُبنى البيانات حتى تتمكن الفرق من الوثوق بها في بيئة الإنتاج."
       ],
       pillars: [
@@ -86,7 +86,7 @@ const content = {
       eyebrow: "المهارات",
       title: "مجموعة عملية لبناء البرمجيات التشغيلية.",
       description:
-        "التركيز على منطق الخلفية، تنظيم البيانات، سير العمل، التكاملات، والأدوات اللازمة لبناء أنظمة قابلة للصيانة."
+        "التركيز على منطق الأنظمة، تنظيم البيانات، سير العمل، التكاملات، والأدوات اللازمة لبناء أنظمة قابلة للصيانة."
     },
     skillGroups: [
       { title: "اللغات والأطر", icon: "code", skills: ["C#", "ASP.NET Core", "JavaScript", "TypeScript"] },
@@ -272,7 +272,7 @@ const content = {
       description:
         "Bilal works at the intersection of petroleum engineering, systems analysis, and software development, with a focus on digital systems that support real operations rather than decorative interfaces.",
       paragraphs: [
-        "I am a Petroleum Engineer, Systems Analyst, and backend/database-focused developer experienced in transforming field procedures and operational data into reliable digital systems. My work focuses on oil and energy operations, industrial workflows, ISP infrastructure, asset management, database modeling, automation, integration, tracking, reporting, and decision-support dashboards.",
+        "I am a Petroleum Engineer, Systems Analyst, and software developer focused on system logic and database architecture, experienced in transforming field procedures and operational data into reliable digital systems. My work focuses on oil and energy operations, industrial workflows, ISP infrastructure, asset management, database modeling, automation, integration, tracking, reporting, and decision-support dashboards.",
         "The goal is simple: build software that understands how operations actually move, where accountability is needed, and how data should be structured so teams can trust it in production."
       ],
       pillars: [
@@ -302,7 +302,7 @@ const content = {
       eyebrow: "Skills",
       title: "A practical stack for operational software.",
       description:
-        "The focus is backend logic, structured data, system workflows, integrations, and the tools needed to ship maintainable systems."
+        "The focus is system logic, structured data, system workflows, integrations, and the tools needed to ship maintainable systems."
     },
     skillGroups: [
       { title: "Languages & Frameworks", icon: "code", skills: ["C#", "ASP.NET Core", "JavaScript", "TypeScript"] },
