@@ -19,7 +19,6 @@ const content = {
     },
     navItems: [
       { label: "الرئيسية", href: "#home" },
-      { label: "الخبرة", href: "#experience" },
       { label: "المهارات", href: "#skills" },
       { label: "المشاريع", href: "#projects" },
       { label: "التواصل", href: "#contact" }
@@ -49,8 +48,7 @@ const content = {
     stats: [
       { value: "+3", label: "سنوات تعليم ذاتي منظم عبر ProgrammingAdvices.com", icon: "code" },
       { value: "+3", label: "مشاريع حية تخدم قطاعات حيوية", icon: "radio" },
-      { value: "Live", label: "ControTik مستخدم لدى مزودي إنترنت", icon: "network" },
-      { value: "روابط", label: "GitHub وLinkedIn والمنتج والـ CV", icon: "globe" }
+      { value: "Live", label: "ControTik مستخدم لدى مزودي إنترنت", icon: "network" }
     ],
     about: {
       eyebrow: "نبذة",
@@ -84,46 +82,6 @@ const content = {
         }
       ]
     },
-    journeySection: {
-      eyebrow: "الخبرة",
-      title: "رحلة عبر أنظمة تشغيلية، استخدام إنتاجي، وبيانات هندسية.",
-      description:
-        "يعكس كل مشروع بيئة تشغيل مختلفة: نقل النفط، بنى مزودي الإنترنت، أصول مؤسسية، وتحليل بيانات بترولية مدعوم بالذكاء الاصطناعي."
-    },
-    journey: [
-      {
-        title: "SPC-TSOS",
-        role: "مهندس ومطور نظام",
-        status: "قيد التطوير",
-        icon: "radio",
-        description:
-          "نظام تحول رقمي لإدارة وتتبع نقل النفط من الحقول إلى الخزانات، وتوحيد البيانات التشغيلية، ومطابقة الكميات المنقولة والمستلمة، واكتشاف الفروقات، ودعم التحكم التشغيلي وصناعة القرار."
-      },
-      {
-        title: "ControTik",
-        role: "المؤسس والمطور",
-        status: "استخدام إنتاجي",
-        icon: "network",
-        description:
-          "نظام رقمي تشغيلي لإدارة بنية مزودي الإنترنت والاشتراكات، مع تكامل MikroTik، أتمتة الفوترة، التنبيهات، التقارير التشغيلية، واستخدام إنتاجي فعلي من مزودي خدمة الإنترنت."
-      },
-      {
-        title: "Addoud / عضد",
-        role: "محلل ومصمم نظام",
-        status: "مشروع تطوعي - قيد التطوير",
-        icon: "blocks",
-        description:
-          "نظام لإدارة دورة حياة الأصول التشغيلية والطبية، يشمل التتبع، الإعارة، الصيانة، الاستهلاك، سجلات التدقيق، ونمذجة مؤسسية قابلة للتوسع."
-      },
-      {
-        title: "مشروع التخرج بالذكاء الاصطناعي",
-        role: "بحث ذكاء اصطناعي بترولي",
-        status: "مكتمل",
-        icon: "branch",
-        description:
-          "نموذج تعلم عميق لتحليل بيانات سجلات الآبار وتقدير مسامية المكامن البترولية لدعم القرار الهندسي."
-      }
-    ],
     skillsSection: {
       eyebrow: "المهارات",
       title: "مجموعة عملية لبناء البرمجيات التشغيلية.",
@@ -150,9 +108,10 @@ const content = {
     projects: [
       {
         name: "SPC-TSOS",
+        role: "مهندس ومطور نظام",
         status: "قيد التطوير",
         description:
-          "نظام تتبع نقل النفط يربط حركة الحقول باستلام الخزانات، اكتشاف الفروقات، والتقارير التشغيلية.",
+          "نظام تحول رقمي لإدارة وتتبع نقل النفط من الحقول إلى الخزانات، وتوحيد البيانات التشغيلية، ومطابقة الكميات المنقولة والمستلمة، واكتشاف الفروقات، ودعم التحكم التشغيلي وصناعة القرار.",
         details:
           "صُمم كطبقة تحكم لسير عمل نقل النفط، مع تركيز على موثوقية التقاط البيانات، مطابقة الكميات، وضوح الفروقات، وسجلات تشغيلية جاهزة لدعم القرار.",
         technologies: ["ASP.NET Core", "SQL Server", "T-SQL", "Operational Workflows"],
@@ -160,19 +119,21 @@ const content = {
       },
       {
         name: "ControTik",
-        status: "مستخدم إنتاجيًا",
+        role: "المؤسس والمطور",
+        status: "استخدام إنتاجي",
         description:
-          "منصة لمزودي الإنترنت تجمع إدارة المشتركين، MikroTik، PPPoE/Hotspot، الفوترة، التنبيهات، والتقارير.",
+          "نظام رقمي تشغيلي لإدارة بنية مزودي الإنترنت والاشتراكات، مع تكامل MikroTik، أتمتة الفوترة، التنبيهات، التقارير التشغيلية، واستخدام إنتاجي فعلي من مزودي خدمة الإنترنت.",
         details:
           "يربط ControTik إدارة المشتركين بموجهات MikroTik، إشعارات WhatsApp، الديون، الأبراج، الممتلكات، الصلاحيات، وتقارير العمل اليومية في نظام مستخدم فعليًا.",
         technologies: ["C#", "MikroTik API", "SQL Server", "أتمتة WhatsApp"],
         demo: profile.controtik
       },
       {
-        name: "عضد Addoud",
+        name: "Addoud / عضد",
+        role: "محلل ومصمم نظام",
         status: "مشروع تطوعي - قيد التطوير",
         description:
-          "نظام دورة حياة للأصول التشغيلية والطبية يشمل الإعارة، الصيانة، الاستهلاك، التدقيق، والنمذجة المؤسسية.",
+          "نظام لإدارة دورة حياة الأصول التشغيلية والطبية، يشمل التتبع، الإعارة، الصيانة، الاستهلاك، سجلات التدقيق، ونمذجة مؤسسية قابلة للتوسع.",
         details:
           "يمثل عضد حركة الأصول والمسؤوليات عبر دورة حياة كاملة، من التسليم والصيانة إلى الاستهلاك وسجلات التدقيق والحوكمة.",
         technologies: ["System Analysis", "Database Design", "Audit Logs", "SQL Server"],
@@ -189,12 +150,15 @@ const content = {
       },
       {
         name: "AI Porosity Prediction",
+        role: "بحث ذكاء اصطناعي بترولي",
         status: "مكتمل",
         description:
           "نموذج تعلم عميق يحلل بيانات سجلات الآبار لتقدير مسامية المكامن البترولية.",
         details:
           "يربط مشروع التخرج بين بيانات هندسة البترول والنمذجة بالذكاء الاصطناعي لدعم تفسير أسرع لأنماط سجلات الآبار وخصائص المكمن.",
         technologies: ["Deep Learning", "Python", "Well Logs", "Petroleum Engineering"],
+        demo: "https://drive.google.com/file/d/1kPW0-qK-aTCGwwuVSuBh6X8uXEU0XcMW/view?usp=drive_link",
+        demoLabel: "الاطلاع على مشروع التخرج",
         github: profile.github
       },
       {
@@ -271,7 +235,6 @@ const content = {
     },
     navItems: [
       { label: "Home", href: "#home" },
-      { label: "Experience", href: "#experience" },
       { label: "Skills", href: "#skills" },
       { label: "Projects", href: "#projects" },
       { label: "Contact", href: "#contact" }
@@ -301,8 +264,7 @@ const content = {
     stats: [
       { value: "3+", label: "Years of structured self-learning with ProgrammingAdvices.com", icon: "code" },
       { value: "3+", label: "Live projects serving vital sectors", icon: "radio" },
-      { value: "Live", label: "ControTik used in ISP operations", icon: "network" },
-      { value: "Links", label: "GitHub, LinkedIn, CV, and product links", icon: "globe" }
+      { value: "Live", label: "ControTik used in ISP operations", icon: "network" }
     ],
     about: {
       eyebrow: "About",
@@ -336,46 +298,6 @@ const content = {
         }
       ]
     },
-    journeySection: {
-      eyebrow: "Experience",
-      title: "A journey through operational systems, production usage, and engineering data.",
-      description:
-        "Each project reflects a different operational environment: petroleum transportation, ISP infrastructure, enterprise assets, and AI-assisted petroleum analysis."
-    },
-    journey: [
-      {
-        title: "SPC-TSOS",
-        role: "System Engineer & Developer",
-        status: "In Development",
-        icon: "radio",
-        description:
-          "A digital transformation system for managing and tracking oil transportation from fields to tanks, unifying operational data, matching transported and received quantities, detecting discrepancies, and supporting operational control and decision-making."
-      },
-      {
-        title: "ControTik",
-        role: "Founder & Developer",
-        status: "Production Usage",
-        icon: "network",
-        description:
-          "An operational digital system for managing ISP infrastructure and subscriptions, with MikroTik integration, billing automation, alerts, operational reports, and real production usage by internet service providers."
-      },
-      {
-        title: "Addoud / عضد",
-        role: "System Analyst & Designer",
-        status: "Volunteer Project - In Development",
-        icon: "blocks",
-        description:
-          "An asset lifecycle management system for operational and medical assets, including tracking, lending, maintenance, consumption, audit logging, and scalable enterprise data modeling."
-      },
-      {
-        title: "AI Graduation Project",
-        role: "Petroleum AI Research",
-        status: "Completed",
-        icon: "branch",
-        description:
-          "A deep learning model for analyzing well-log data to estimate petroleum reservoir porosity and support engineering decision-making."
-      }
-    ],
     skillsSection: {
       eyebrow: "Skills",
       title: "A practical stack for operational software.",
@@ -402,9 +324,10 @@ const content = {
     projects: [
       {
         name: "SPC-TSOS",
+        role: "System Engineer & Developer",
         status: "In Development",
         description:
-          "Oil transportation tracking system that aligns field movement, tank receiving, discrepancy detection, and operational reporting.",
+          "A digital transformation system for managing and tracking oil transportation from fields to tanks, unifying operational data, matching transported and received quantities, detecting discrepancies, and supporting operational control and decision-making.",
         details:
           "Designed as a control layer for oil transportation workflows, SPC-TSOS focuses on reliable data capture, quantity matching, discrepancy visibility, and decision-ready operational records.",
         technologies: ["ASP.NET Core", "SQL Server", "T-SQL", "Operational Workflows"],
@@ -412,19 +335,21 @@ const content = {
       },
       {
         name: "ControTik",
-        status: "Production-used",
+        role: "Founder & Developer",
+        status: "Production Usage",
         description:
-          "ISP platform for subscriber operations, MikroTik automation, PPPoE/Hotspot control, billing, alerts, and reports.",
+          "An operational digital system for managing ISP infrastructure and subscriptions, with MikroTik integration, billing automation, alerts, operational reports, and real production usage by internet service providers.",
         details:
           "ControTik connects subscriber management with MikroTik routers, WhatsApp notifications, debt tracking, towers, assets, permissions, and daily ISP reporting in one production-used system.",
         technologies: ["C#", "MikroTik API", "SQL Server", "WhatsApp Automation"],
         demo: profile.controtik
       },
       {
-        name: "Addoud Asset Management",
+        name: "Addoud / عضد",
+        role: "System Analyst & Designer",
         status: "Volunteer Project - In Development",
         description:
-          "Asset lifecycle system for operational and medical assets with lending, maintenance, consumption, audit logs, and enterprise modeling.",
+          "An asset lifecycle management system for operational and medical assets, including tracking, lending, maintenance, consumption, audit logging, and scalable enterprise data modeling.",
         details:
           "Addoud models asset movement and responsibility across a full lifecycle, from handover and maintenance to consumption, audit trails, and governance-ready records.",
         technologies: ["System Analysis", "Database Design", "Audit Logs", "SQL Server"],
@@ -441,12 +366,15 @@ const content = {
       },
       {
         name: "AI Porosity Prediction",
+        role: "Petroleum AI Research",
         status: "Completed",
         description:
           "Deep learning model that analyzes well-log data to estimate petroleum reservoir porosity for engineering support.",
         details:
           "This graduation project connects petroleum engineering data with AI modeling to support faster interpretation of well-log patterns and reservoir properties.",
         technologies: ["Deep Learning", "Python", "Well Logs", "Petroleum Engineering"],
+        demo: "https://drive.google.com/file/d/1kPW0-qK-aTCGwwuVSuBh6X8uXEU0XcMW/view?usp=drive_link",
+        demoLabel: "View Graduation Project",
         github: profile.github
       },
       {
@@ -623,12 +551,16 @@ function renderSectionHeaders() {
 
 function renderHeroDynamic() {
   const current = content[state.locale];
+  const flowIcons = ["gauge", "code", "workflow", "route"];
   const flow = current.hero.flowItems.map((item, index) => `
     <div class="flow-item">
-      <div class="flow-index">0${index + 1}</div>
+      <div class="flow-index" aria-hidden="true">
+        ${icon(flowIcons[index] || "shield", 18)}
+        <span>0${index + 1}</span>
+      </div>
       <div class="flow-body">
         <p>${item}</p>
-        <div class="progress-track"><div class="progress-fill" style="width:${32 + index * 7}%"></div></div>
+        <div class="progress-track"><div class="progress-fill" style="width:${52 + index * 9}%"></div></div>
       </div>
     </div>
   `).join("");
@@ -663,23 +595,6 @@ function renderAbout() {
   setHtml("[data-pillars-grid]", pillars);
 }
 
-function renderJourney() {
-  const items = content[state.locale].journey.map((item) => `
-    <article class="spc-card timeline-card reveal">
-      <span class="timeline-icon">${icon(item.icon, 20)}</span>
-      <div class="timeline-card-head">
-        <div>
-          <h3>${item.title}</h3>
-          <p class="role">${item.role}</p>
-        </div>
-        <span class="chip">${item.status}</span>
-      </div>
-      <p>${item.description}</p>
-    </article>
-  `).join("");
-  setHtml("[data-journey-list]", items);
-}
-
 function renderSkills() {
   const groups = content[state.locale].skillGroups.map((group) => `
     <article class="spc-card skill-card reveal">
@@ -698,12 +613,14 @@ function renderProjects() {
   const projects = current.projects.map((project) => {
     const github = project.github ? `<a class="small-link" href="${project.github}" target="_blank" rel="noreferrer">${icon("github", 16)} ${current.actions.github}</a>` : "";
     const demoAttrs = project.demo?.startsWith("#") ? "" : 'target="_blank" rel="noreferrer"';
-    const demo = project.demo ? `<a class="small-link" href="${project.demo}" ${demoAttrs}>${icon("external", 16)} ${current.actions.demo}</a>` : "";
+    const demoLabel = project.demoLabel || current.actions.demo;
+    const demo = project.demo ? `<a class="small-link" href="${project.demo}" ${demoAttrs}>${icon("external", 16)} ${demoLabel}</a>` : "";
     return `
       <article class="spc-card project-card reveal">
         <div class="project-top">
           <div>
             <h3>${project.name}</h3>
+            ${project.role ? `<p class="project-role">${project.role}</p>` : ""}
             <p>${project.description}</p>
           </div>
           <span class="chip">${project.status}</span>
@@ -769,7 +686,6 @@ function renderAll() {
   renderSectionHeaders();
   renderHeroDynamic();
   renderAbout();
-  renderJourney();
   renderSkills();
   renderProjects();
   renderFaq();
