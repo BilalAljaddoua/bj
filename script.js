@@ -3,18 +3,19 @@ const profile = {
   website: "https://bilalaljaddoua.me",
   github: "https://github.com/BilalAljaddoua",
   linkedin: "https://www.linkedin.com/in/bilal-al-jaddoua-5bb7351b7/",
-  controtik: "https://controtik.com"
+  controtik: "https://controtik.com",
+  whatsapp: "https://wa.me/963936809092"
 };
 
 const content = {
   ar: {
     brand: {
       name: "بلال جهاد الجدوع",
-      nativeName: "Bilal Aljaddoua",
+      nativeName: "بلال جهاد الجدوع",
       initials: "BA",
       role: "مهندس أنظمة رقمية تشغيلية",
       secondaryRole: "محلل ومصمم نظم | مطور برمجيات",
-      nativeRole: "Operational Digital Systems Engineer | Systems Analyst & Software Developer",
+      nativeRole: "مهندس أنظمة رقمية تشغيلية | محلل ومصمم نظم ومطور برمجيات",
       shortLabel: "الأنظمة التشغيلية"
     },
     navItems: [
@@ -212,13 +213,12 @@ const content = {
       },
       linksEyebrow: "روابط مباشرة",
       linksTitle: "تواصل مع بلال",
-      linksDescription: "مسار مباشر إلى البريد، GitHub، LinkedIn، المنتج الحي، والموقع الشخصي.",
+      linksDescription: "مسار مباشر إلى WhatsApp، البريد، GitHub، وLinkedIn.",
       links: [
+        { label: "WhatsApp", value: "+963 936 809 092", href: profile.whatsapp, icon: "send" },
         { label: "البريد", value: profile.email, href: `mailto:${profile.email}`, icon: "mail" },
         { label: "GitHub", value: "github.com/BilalAljaddoua", href: profile.github, icon: "branch" },
-        { label: "LinkedIn", value: "linkedin.com/in/bilal-al-jaddoua", href: profile.linkedin, icon: "network" },
-        { label: "ControTik", value: "controtik.com", href: profile.controtik, icon: "radio" },
-        { label: "الموقع", value: "bilalaljaddoua.me", href: profile.website, icon: "globe" }
+        { label: "LinkedIn", value: "linkedin.com/in/bilal-al-jaddoua", href: profile.linkedin, icon: "network" }
       ]
     },
     footer: { rights: "جميع الحقوق محفوظة." }
@@ -226,11 +226,11 @@ const content = {
   en: {
     brand: {
       name: "Bilal Aljaddoua",
-      nativeName: "بلال جهاد الجدوع",
+      nativeName: "Bilal Aljaddoua",
       initials: "BA",
       role: "Operational Digital Systems Engineer",
       secondaryRole: "Systems Analyst & Software Developer",
-      nativeRole: "مهندس أنظمة رقمية تشغيلية | محلل ومصمم نظم",
+      nativeRole: "Operational Digital Systems Engineer | Systems Analyst & Software Developer",
       shortLabel: "Operational Systems"
     },
     navItems: [
@@ -430,13 +430,12 @@ const content = {
       linksEyebrow: "Direct Links",
       linksTitle: "Connect with Bilal",
       linksDescription:
-        "A direct path to the CV, public code profile, professional profile, and live product presence.",
+        "A direct path to WhatsApp, email, public code profile, and professional profile.",
       links: [
+        { label: "WhatsApp", value: "+963 936 809 092", href: profile.whatsapp, icon: "send" },
         { label: "Email", value: profile.email, href: `mailto:${profile.email}`, icon: "mail" },
         { label: "GitHub", value: "github.com/BilalAljaddoua", href: profile.github, icon: "branch" },
-        { label: "LinkedIn", value: "linkedin.com/in/bilal-al-jaddoua", href: profile.linkedin, icon: "network" },
-        { label: "ControTik", value: "controtik.com", href: profile.controtik, icon: "radio" },
-        { label: "Website", value: "bilalaljaddoua.me", href: profile.website, icon: "globe" }
+        { label: "LinkedIn", value: "linkedin.com/in/bilal-al-jaddoua", href: profile.linkedin, icon: "network" }
       ]
     },
     footer: { rights: "All rights reserved." }
