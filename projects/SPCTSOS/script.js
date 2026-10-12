@@ -161,21 +161,45 @@ const previews = {
 
 const stageButtons = document.querySelectorAll(".stage");
 const stageView = document.querySelector("#stageView");
+const localeKey = "bilal-portfolio-locale-v2";
+let locale = localStorage.getItem(localeKey) === "en" ? "en" : "ar";
+let activeStage = "identity";
+let activePreview = null;
+
+const translatedElements = Array.from(document.querySelectorAll("[data-i18n]")).map((element) => ({
+  element,
+  key: element.dataset.i18n,
+  original: element.textContent
+}));
+const translatedLabels = Array.from(document.querySelectorAll("[data-i18n-aria-label]")).map((element) => ({
+  element,
+  key: element.dataset.i18nAriaLabel,
+  original: element.getAttribute("aria-label")
+}));
+const arabicTitle = document.title;
+const descriptionMeta = document.querySelector('meta[name="description"]');
+const arabicDescription = descriptionMeta?.content;
+
+function renderStage() {
+  const content = (locale === "en" ? englishStages : stageContent)[activeStage];
+  if (!content || !stageView) return;
+  stageButtons.forEach((button) => {
+    const active = button.dataset.stage === activeStage;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  stageView.innerHTML = `
+    <span class="status-pill">${locale === "en" ? "Active" : "نشط"}</span>
+    <h3>${content.title}</h3>
+    <p>${content.body}</p>
+    <ul>${content.points.map((point) => `<li>${point}</li>`).join("")}</ul>
+  `;
+}
 
 stageButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const content = stageContent[button.dataset.stage];
-    if (!content) return;
-
-    stageButtons.forEach((item) => item.classList.remove("is-active"));
-    button.classList.add("is-active");
-
-    stageView.innerHTML = `
-      <span class="status-pill">نشط</span>
-      <h3>${content.title}</h3>
-      <p>${content.body}</p>
-      <ul>${content.points.map((point) => `<li>${point}</li>`).join("")}</ul>
-    `;
+    activeStage = button.dataset.stage;
+    renderStage();
   });
 });
 
@@ -185,8 +209,11 @@ const docCards = document.querySelectorAll(".doc-card");
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
-    filterButtons.forEach((item) => item.classList.remove("is-active"));
-    button.classList.add("is-active");
+    filterButtons.forEach((item) => {
+      const active = item === button;
+      item.classList.toggle("is-active", active);
+      item.setAttribute("aria-pressed", String(active));
+    });
 
     docCards.forEach((card) => {
       card.classList.toggle("is-hidden", filter !== "all" && card.dataset.type !== filter);
@@ -197,15 +224,71 @@ filterButtons.forEach((button) => {
 const inlinePreview = document.querySelector("#inlinePreview");
 const previewButtons = document.querySelectorAll("[data-preview]");
 
+function renderPreview() {
+  const preview = (locale === "en" ? englishPreviews : previews)[activePreview];
+  if (!preview || !inlinePreview) return;
+  inlinePreview.innerHTML = preview;
+  inlinePreview.querySelectorAll(".preview-table").forEach((table) => {
+    if (table.parentElement.classList.contains("preview-table-scroll")) return;
+    const wrapper = document.createElement("div");
+    wrapper.className = "preview-table-scroll";
+    table.before(wrapper);
+    wrapper.appendChild(table);
+  });
+  inlinePreview.querySelectorAll(".preview-table-scroll").forEach((wrapper) => {
+    wrapper.tabIndex = 0;
+    wrapper.setAttribute("role", "region");
+    wrapper.setAttribute("aria-label", locale === "en" ? "Document preview table" : "جدول معاينة الوثيقة");
+  });
+}
+
 previewButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const preview = previews[button.dataset.preview];
-    if (!preview || !inlinePreview) return;
-
-    inlinePreview.innerHTML = preview;
-    inlinePreview.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    activePreview = button.dataset.preview;
+    renderPreview();
+    inlinePreview?.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      block: "nearest"
+    });
   });
 });
+
+const localeToggle = document.querySelector("#localeToggle");
+
+function applyLocale() {
+  document.documentElement.lang = locale;
+  document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+  translatedElements.forEach(({ element, key, original }) => {
+    element.textContent = locale === "en" ? englishText[key] : original;
+  });
+  translatedLabels.forEach(({ element, key, original }) => {
+    element.setAttribute("aria-label", locale === "en" ? englishText[key] : original);
+  });
+  document.title = locale === "en" ? "SPC-TSOS | Oil Transportation System" : arabicTitle;
+  if (descriptionMeta) {
+    descriptionMeta.content = locale === "en"
+      ? "SPC-TSOS: digital transformation for tanker-based oil transportation from field to tank, with source verification, route tracking, and quantity reconciliation."
+      : arabicDescription;
+  }
+  if (localeToggle) {
+    localeToggle.textContent = locale === "ar" ? "EN" : "عربي";
+    localeToggle.lang = locale === "ar" ? "en" : "ar";
+    localeToggle.setAttribute("aria-label", locale === "ar" ? "Switch to English" : "التبديل إلى العربية");
+  }
+  renderStage();
+  if (activePreview) renderPreview();
+  document.querySelectorAll("[data-count]").forEach((element) => {
+    element.textContent = Number(element.dataset.count).toLocaleString(locale === "ar" ? "ar-SY" : "en-US");
+  });
+  localStorage.setItem(localeKey, locale);
+}
+
+localeToggle?.addEventListener("click", () => {
+  locale = locale === "ar" ? "en" : "ar";
+  applyLocale();
+});
+
+applyLocale();
 
 const themeToggle = document.querySelector("#themeToggle");
 const savedTheme = localStorage.getItem("spc-tsos-theme");
@@ -230,7 +313,7 @@ const animateCount = (element) => {
 
   const timer = window.setInterval(() => {
     current = Math.min(target, current + increment);
-    element.textContent = current.toLocaleString("ar-SY");
+    element.textContent = current.toLocaleString(locale === "ar" ? "ar-SY" : "en-US");
     if (current >= target) window.clearInterval(timer);
   }, 32);
 };

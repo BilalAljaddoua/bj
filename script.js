@@ -7,11 +7,16 @@ const profile = {
   whatsapp: "https://wa.me/963936809092"
 };
 
+const cvFiles = {
+  ar: "assets/CVs/Arabic/BilalAljaddoua-ar-.pdf",
+  en: "assets/CVs/English/BilalAljaddoua-en-.pdf"
+};
+
 const content = {
   ar: {
     brand: {
       name: "بلال جهاد الجدوع",
-      nativeName: "بلال جهاد الجدوع",
+      nativeName: "بلال جهاد الجدوع", 
       initials: "BA",
       role: "مهندس أنظمة رقمية تشغيلية",
       secondaryRole: "محلل ومصمم نظم | مطور برمجيات",
@@ -37,8 +42,8 @@ const content = {
     hero: {
       badge: "العمليات الصناعية، البيانات، والبرمجيات",
       greeting: "مرحبًا، أنا بلال",
-      title: "مهندس أنظمة رقمية تشغيلية",
-      subtitle: "أحوّل العمليات الميدانية المعقدة إلى أنظمة رقمية موثوقة، قابلة للتوسع، وجاهزة لدعم القرار.",
+      title: "مهندس بترول ومطور برمجيات متخصص في الأنظمة الرقمية التشغيلية",
+      subtitle: "أصمم وأطور حلولاً برمجية تحول العمليات التشغيلية المعقدة إلى أنظمة رقمية متكاملة، تجمع بين هندسة البرمجيات وقواعد البيانات وفهم احتياجات العمل الفعلية.",
       note:
         "أنا لا أبني واجهات فقط؛ بل أصمم أنظمة تشغيلية حقيقية تجمع بين سير العمل، قواعد البيانات، التكاملات، سجلات التدقيق، ولوحات المتابعة في منظومة يمكن الاعتماد عليها داخل بيئات العمل الفعلية.",
       visualEyebrow: "نمط تفكير هجين",
@@ -61,45 +66,74 @@ const content = {
         "الهدف بسيط: بناء برمجيات تفهم كيف تتحرك العمليات فعليًا، أين تكون المساءلة مطلوبة، وكيف يجب أن تُبنى البيانات حتى تتمكن الفرق من الوثوق بها في بيئة الإنتاج."
       ],
       pillars: [
-        {
-          title: "سياق هندسة البترول",
-          description: "عمليات ميدانية، كميات، أصول، سجلات، وواقع البيئات الصناعية.",
-          icon: "gauge"
-        },
-        {
-          title: "تحليل الأنظمة",
-          description: "تحويل إجراءات التشغيل إلى سير عمل، قواعد، حالات، وتقارير منظمة.",
-          icon: "route"
-        },
-        {
-          title: "تطوير يبدأ من قاعدة البيانات",
-          description: "نماذج بيانات منظمة، منطق مخزن، تتبع، سجلات تدقيق، وبيانات إنتاجية.",
-          icon: "database"
-        },
-        {
-          title: "اعتمادية تشغيلية",
-          description: "أنظمة مصممة للمساءلة، الاستمرارية، التكاملات، ودعم القرار.",
-          icon: "shield"
-        }
+        // {
+        //   title: "سياق هندسة البترول",
+        //   description: "عمليات ميدانية، كميات، أصول، سجلات، وواقع البيئات الصناعية.",
+        //   icon: "gauge"
+        // },
+        // {
+        //   title: "تحليل الأنظمة",
+        //   description: "تحويل إجراءات التشغيل إلى سير عمل، قواعد، حالات، وتقارير منظمة.",
+        //   icon: "route"
+        // },
+        // {
+        //   title: "تطوير يبدأ من قاعدة البيانات",
+        //   description: "نماذج بيانات منظمة، منطق مخزن، تتبع، سجلات تدقيق، وبيانات إنتاجية.",
+        //   icon: "database"
+        // },
+        // {
+        //   title: "اعتمادية تشغيلية",
+        //   description: "أنظمة مصممة للمساءلة، الاستمرارية، التكاملات، ودعم القرار.",
+        //   icon: "shield"
+        // }
       ]
     },
-    skillsSection: {
-      eyebrow: "المهارات",
-      title: "مجموعة عملية لبناء البرمجيات التشغيلية.",
-      description:
-        "التركيز على منطق الأنظمة، تنظيم البيانات، سير العمل، التكاملات، والأدوات اللازمة لبناء أنظمة قابلة للصيانة."
-    },
-    skillGroups: [
-      { title: "اللغات والأطر", icon: "code", skills: ["C#", "ASP.NET Core", "JavaScript", "TypeScript"] },
-      { title: "قواعد البيانات", icon: "database", skills: ["SQL Server", "T-SQL", "تصميم قواعد بيانات متينة", "Stored Procedures"] },
-      {
-        title: "الأنظمة والمعمارية",
-        icon: "workflow",
-        skills: ["تحليل الأنظمة", "تصميم سير العمل التشغيلي", "نمذجة قواعد البيانات", "سجلات التدقيق", "أنظمة التقارير"]
-      },
-      { title: "واجهات البرمجة والتكامل", icon: "globe", skills: ["REST APIs", "MikroTik API", "ADO.NET"] },
-      { title: "الأدوات", icon: "shield", skills: ["Git", "GitHub", "Visual Studio", "VS Code"] }
-    ],
+  
+skillsSection: {
+  eyebrow: "المهارات التقنية",
+  title: "التقنيات التي أستخدمها لتطوير أنظمة متكاملة.",
+  description:
+    "خبرة في تطوير التطبيقات وواجهات البرمجة، وتصميم قواعد البيانات، وتحليل الأنظمة وتكاملها، مع التركيز على الأداء والموثوقية وقابلية التوسع."
+},
+
+
+skillGroups: [
+  {
+    title: "تطوير التطبيقات",
+    icon: "code",
+    skills: [
+      "C#",
+      "ASP.NET Core",
+      "REST APIs",
+      "JWT Authentication",
+      "ADO.NET",
+      "MikroTik API"
+    ]
+  },
+  {
+    title: "قواعد البيانات",
+    icon: "database",
+    skills: [
+      "SQL Server",
+      "T-SQL",
+      "Entity Framework Core",
+      "Database Design",
+      "Stored Procedures"
+    ]
+  },
+  {
+    title: "تحليل وتصميم الأنظمة",
+    icon: "workflow",
+    skills: [
+      "System Analysis",
+      "Requirements Analysis",
+      "Workflow Design",
+      "Audit Logging",
+      "Git & GitHub"
+    ]
+  }
+],
+
     projectsSection: {
       eyebrow: "مشاريع مختارة",
       title: "أنظمة تشغيلية لها بنية حقيقية خلف الواجهة.",
@@ -231,8 +265,8 @@ const content = {
       nativeName: "Bilal Aljaddoua",
       initials: "BA",
       role: "Operational Digital Systems Engineer",
-      secondaryRole: "Systems Analyst & Software Developer",
-      nativeRole: "Operational Digital Systems Engineer | Systems Analyst & Software Developer",
+      secondaryRole: "Systems Analyst & Designer | Software Developer",
+      nativeRole: "Operational Digital Systems Engineer | Systems Analyst, Designer & Software Developer",
       shortLabel: "Operational Systems"
     },
     navItems: [
@@ -254,8 +288,8 @@ const content = {
     hero: {
       badge: "Industrial operations, data, and software",
       greeting: "Hi, I'm Bilal",
-      title: "Operational Digital Systems Engineer",
-      subtitle: "Transforming complex field operations into reliable, scalable, and decision-ready digital systems.",
+      title: "Petroleum Engineer & Software Developer Specializing in Operational Digital Systems",
+      subtitle: "I design and develop software solutions that transform complex operational processes into integrated digital systems, combining software engineering, databases, and an understanding of real business needs.",
       note:
         "I am not just building web interfaces. I design operational software where workflows, databases, integrations, audits, and dashboards become one dependable system for real-world environments.",
       visualEyebrow: "Hybrid Thinking Pattern",
@@ -277,46 +311,52 @@ const content = {
         "I am a Petroleum Engineer, Systems Analyst, and software developer focused on system logic and database architecture, experienced in transforming field procedures and operational data into reliable digital systems. My work focuses on oil and energy operations, industrial workflows, ISP infrastructure, asset management, database modeling, automation, integration, tracking, reporting, and decision-support dashboards.",
         "The goal is simple: build software that understands how operations actually move, where accountability is needed, and how data should be structured so teams can trust it in production."
       ],
-      pillars: [
-        {
-          title: "Petroleum engineering context",
-          description: "Field operations, quantities, assets, logs, and the realities of industrial environments.",
-          icon: "gauge"
-        },
-        {
-          title: "Systems analysis",
-          description: "Turning operating procedures into structured workflows, rules, states, and reports.",
-          icon: "route"
-        },
-        {
-          title: "Database-first development",
-          description: "Structured data models, stored logic, traceability, audit trails, and production-grade records.",
-          icon: "database"
-        },
-        {
-          title: "Operational reliability",
-          description: "Systems designed for accountability, continuity, integrations, and decision support.",
-          icon: "shield"
-        }
-      ]
+      pillars: []
     },
     skillsSection: {
-      eyebrow: "Skills",
-      title: "A practical stack for operational software.",
+      eyebrow: "Technical Skills",
+      title: "The technologies I use to build integrated systems.",
       description:
-        "The focus is system logic, structured data, system workflows, integrations, and the tools needed to ship maintainable systems."
+        "Experience in application and API development, database design, and systems analysis and integration, with a focus on performance, reliability, and scalability."
     },
-    skillGroups: [
-      { title: "Languages & Frameworks", icon: "code", skills: ["C#", "ASP.NET Core", "JavaScript", "TypeScript"] },
-      { title: "Databases", icon: "database", skills: ["SQL Server", "T-SQL", "Database Design", "Stored Procedures"] },
-      {
-        title: "Systems & Architecture",
-        icon: "workflow",
-        skills: ["Systems Analysis", "Operational Workflow Design", "Database Modeling", "Audit Logs", "Reporting Systems"]
-      },
-      { title: "APIs & Integration", icon: "globe", skills: ["REST APIs", "MikroTik API", "ADO.NET"] },
-      { title: "Tools", icon: "shield", skills: ["Git", "GitHub", "Visual Studio", "VS Code"] }
-    ],
+   
+skillGroups: [
+  {
+    title: "Application Development",
+    icon: "code",
+    skills: [
+      "C#",
+      "ASP.NET Core",
+      "REST APIs",
+      "JWT Authentication",
+      "ADO.NET",
+      "MikroTik API"
+    ]
+  },
+  {
+    title: "Databases",
+    icon: "database",
+    skills: [
+      "SQL Server",
+      "T-SQL",
+      "Entity Framework Core",
+      "Database Design",
+      "Stored Procedures"
+    ]
+  },
+  {
+    title: "Systems Analysis & Design",
+    icon: "workflow",
+    skills: [
+      "System Analysis",
+      "Requirements Analysis",
+      "Workflow Design",
+      "Audit Logging",
+      "Git & GitHub"
+    ]
+  }
+],
+
     projectsSection: {
       eyebrow: "Featured Projects",
       title: "Operational systems with real structure behind the interface.",
@@ -525,7 +565,7 @@ function renderHeader() {
           <button type="button" data-mobile-locale>${icon("languages", 16)} ${state.locale === "en" ? "العربية" : "English"}</button>
           <button type="button" data-mobile-theme>${state.theme === "dark" ? icon("sun", 16) + " Light" : icon("moon", 16) + " Dark"}</button>
         </div>
-        <a href="assets/Bilal-Aljaddoua-CV.pdf" download>${icon("download", 16)} ${current.actions.downloadCv}</a>
+        <a href="${cvFiles[state.locale]}" data-cv-download download>${icon("download", 16)} ${current.actions.downloadCv}</a>
       </div>
     `;
   }
@@ -534,6 +574,12 @@ function renderHeader() {
   if (localeLabel) localeLabel.textContent = state.locale === "en" ? "AR" : "EN";
   setHtml("[data-theme-icon]", icon(state.theme === "dark" ? "sun" : "moon", 17));
   setHtml("[data-menu-icon]", icon("menu", 20));
+}
+
+function updateCvLinks() {
+  document.querySelectorAll("[data-cv-download]").forEach((link) => {
+    link.setAttribute("href", cvFiles[state.locale]);
+  });
 }
 
 function renderSectionHeaders() {
@@ -685,6 +731,7 @@ function renderAll() {
   applyPreferences();
   renderI18n();
   renderHeader();
+  updateCvLinks();
   renderStaticIcons();
   renderSectionHeaders();
   renderHeroDynamic();
